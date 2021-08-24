@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./sass/main.scss" />
+		<title>Login Page</title>
+	</head>
+	<body>
+		<main class="main">
+			<div class="img">
+				<img src="./img/bg.png" alt="background" class="img__item" />
+			</div>
+			<div class="right">
+				<form class="form">
+					<p class="form__suptitle">Welcome back</p>
+					<h1 class="form__title">Login to your account</h1>
+
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							class="form__control"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input
+							type="password"
+							id="password"
+							name="password"
+							class="form__control"
+						/>
+					</div>
+
+					<div class="form-addition">
+						<div class="form-remember">
+							<input
+								type="radio"
+								class="form__radio"
+								id="isRemember"
+								name="isRemember"
+							/>
+							<label for="isRemember">Remember me</label>
+						</div>
+						<a href="#" class="form__forgot">Forgot password?</a>
+					</div>
+					<button class="form-btn btn-success">Log In</button>
+					<button class="form-btn btn-dark btn-google">
+						<img src="./img/google.svg" alt="google" />
+						Or sign-in with google
+					</button>
+
+					<a href="#" class="form-tip">
+						Don't have an account? <span>Join free today</span>
+					</a>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
